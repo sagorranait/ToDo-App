@@ -12,10 +12,10 @@
   flex-wrap: $wrap;
 }
 
-@mixin FontStyle() {
-  font-size: 25px;
-        text-align: center;
-        line-height: 50px;
-        color: #5b56d5;
-        text-transform: capitalize;
+@mixin FontStyle($size, $color, $align, $lh, $transform) {
+  font-size: $size;
+  text-align: $align;
+  line-height: $lh;
+  color: $color;
+  text-transform: $transform;
 }

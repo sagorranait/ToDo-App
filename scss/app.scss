@@ -27,14 +27,19 @@
       box-shadow: 0px 0px 9px 2px $Mischka;
       -webkit-box-shadow: 0px 0px 9px 2px $Mischka;
       -moz-box-shadow: 0px 0px 9px 2px $Mischka;
+
       h1{
         font-family: 'Pacifico', sans-serif;
-        font-size: 25px;
-        text-align: center;
-        line-height: 50px;
-        color: #5b56d5;
-        text-transform: capitalize;
+        @include FontStyle(25px, $Indigo, center, 50px, capitalize);
       }
+    }
+
+    .todo-list{
+      @include DivSizing(100%, 580px, transparent);
+    }
+
+    .todo-form{
+
     }
   }
 }

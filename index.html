@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/app.css">
 </head>
 <body>
@@ -17,11 +18,28 @@
         <h1>todo</h1>
       </div>
       <div class="todo-list"></div>
-      <div class="todo-form"></div>
+      <div class="todo-form">
+        <form>
+          <div class="emoji">
+            <div class="btn-group dropup">
+              <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropup
+              </button>
+              <ul class="dropdown-menu">
+                <!-- Dropdown menu links -->
+              </ul>
+            </div>
+          </div>
+          <div class="input-field">
+            <input type="text" class="form-control" id="todos" aria-describedby="emailHelp">
+          </div>
+        </form>
+      </div>
     </div>
   </section>
 
 <script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
 <script src="./js/app.js"></script>
 <script src="./js/functionality.js"></script>
 </body>
