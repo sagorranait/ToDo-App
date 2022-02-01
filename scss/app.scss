@@ -1,0 +1,40 @@
+// font-family: 'Pacifico', cursive;
+// All relative files
+@import './color';
+@import './mixin';
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#todo{
+  @include DivSizing(100%, 100vh, $Mischka);
+  @include DisplayFlex(flex, center, center, row, wrap);
+
+  .main-area{
+    @include DivSizing(420px, 780px, $White);
+    border-radius: 15px;
+    box-shadow: 0px 0px 9px 7px $Mischka;
+    -webkit-box-shadow: 0px 0px 9px 7px $Mischka;
+    -moz-box-shadow: 0px 0px 9px 7px $Mischka;
+
+    .header{
+      @include DivSizing(100%, 50px, $White);
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      box-shadow: 0px 0px 9px 2px $Mischka;
+      -webkit-box-shadow: 0px 0px 9px 2px $Mischka;
+      -moz-box-shadow: 0px 0px 9px 2px $Mischka;
+      h1{
+        font-family: 'Pacifico', sans-serif;
+        font-size: 25px;
+        text-align: center;
+        line-height: 50px;
+        color: #5b56d5;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

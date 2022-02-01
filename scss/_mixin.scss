@@ -1,0 +1,21 @@
+@mixin DivSizing($w, $h, $bg) {
+  width: $w;
+  height: $h;
+  background-color: $bg;
+}
+
+@mixin DisplayFlex($flex, $align, $justify, $direction, $wrap) {
+  display: $flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+@mixin FontStyle() {
+  font-size: 25px;
+        text-align: center;
+        line-height: 50px;
+        color: #5b56d5;
+        text-transform: capitalize;
+}
