@@ -9,6 +9,24 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+
 #todo{
   @include DivSizing(100%, 100vh, $Mischka);
   @include DisplayFlex(flex, center, center, row, wrap);
@@ -19,6 +37,7 @@
     box-shadow: 0px 0px 9px 7px $Mischka;
     -webkit-box-shadow: 0px 0px 9px 7px $Mischka;
     -moz-box-shadow: 0px 0px 9px 7px $Mischka;
+    position: relative;
 
     .header{
       @include DivSizing(100%, 50px, $White);
@@ -35,11 +54,43 @@
     }
 
     .todo-list{
-      @include DivSizing(100%, 580px, transparent);
+      @include DivSizing(100%, 730px, transparent);
+      border-bottom-right-radius: 15px;
+      border-bottom-left-radius: 15px;
     }
 
     .todo-form{
+      width: 95%;
+      position: absolute;
+      left: 11px;
+      bottom: 10px;
+      .form-group{
+        background: $White;
+        box-shadow: 0px 0px 5px 0px $Mischka;
+        -webkit-box-shadow: 0px 0px 5px 0px $Mischka;
+        -moz-box-shadow: 0px 0px 5px 0px $Mischka;
+        padding: 5px 0;
+        border-radius: 50px;
+        @include DisplayFlex(flex, center, space-evenly, row, wrap);
 
+        .emoji{
+          .btn-group{
+            background: $Gray;
+            border-radius: 50px;
+          }
+          .dropdown-menu{
+            @include DivSizing(388px, 300px, $White);
+            inset: auto auto 10px 0px !important;
+          }
+        }
+
+        .input-field{
+          width: 295px;
+          .form-control{
+            border-radius: 50px;
+          }
+        }
+      }
     }
   }
 }
