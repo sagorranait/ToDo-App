@@ -119,8 +119,46 @@ label:focus,
                   @include DisplayFlex(flex, center, space-between, row, wrap);
                   padding-top: 10px;
                   li{
-                    font-size: 25px;
+                    @include DivSizing(45px, 45px, $White);
+                    @include FontStyle(25px, none, center, 41px, capitalize);
                     cursor: pointer;
+                    border-radius: 50px;
+                    box-shadow: 0px 0px 3px 0px #9b9b9b;
+                    margin: 10px 6px 10px 0px;
+                  }
+                  .car {
+                    line-height: 32px !important;
+                  }
+                  .apple {
+                    line-height: 45px !important;
+                    padding-left: 3px;
+                  }
+                  .hospital {
+                    line-height: 43px !important;
+                    padding-left: 3px;
+                  }
+                  .bank {
+                    line-height: 43px !important;
+                    padding-left: 2px;
+                  }
+                  .college {
+                    line-height: 35px !important;
+                    padding-left: 2px;
+                  }
+                  .bicycle {
+                    line-height: 35px !important;
+                    padding-left: 3px;
+                  }
+                  .gym {
+                    line-height: 46px !important;
+                    padding-left: 4px;
+                  }
+                  .cat {
+                    line-height: 46px !important;
+                    padding-left: 2px;
+                  }
+                  .football {
+                    line-height: 43px !important;
                   }
                 }
               }

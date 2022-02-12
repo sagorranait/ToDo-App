@@ -29,7 +29,7 @@ const todo = {
     { key: 'cricket', value: '🏏', index: 1},
     { key: 'tree', value: '🌱', index: 1},
     { key: 'mosquito', value: '🦟', index: 1},
-    { key: 'ice-cream', value: '🍨', index: 1},
+    { key: 'ice-cream', value: '🍨', index: 1}
   ],
   showEmoji: document.querySelector('.emoji-list'),
 };

@@ -195,8 +195,62 @@ label:focus,
 }
 
 #todo .main-area .todo-form .form-group .emoji .dropdown-menu .emojis .used .emoji-list li {
+  width: 45px;
+  height: 45px;
+  background-color: #fff;
   font-size: 25px;
+  text-align: center;
+  line-height: 41px;
+  color: none;
+  text-transform: capitalize;
   cursor: pointer;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 0px 3px 0px #9b9b9b;
+          box-shadow: 0px 0px 3px 0px #9b9b9b;
+  margin: 10px 6px 10px 0px;
+}
+
+#todo .main-area .todo-form .form-group .emoji .dropdown-menu .emojis .used .emoji-list .car {
+  line-height: 32px !important;
+}
+
+#todo .main-area .todo-form .form-group .emoji .dropdown-menu .emojis .used .emoji-list .apple {
+  line-height: 45px !important;
+  padding-left: 3px;
+}
+
+#todo .main-area .todo-form .form-group .emoji .dropdown-menu .emojis .used .emoji-list .hospital {
+  line-height: 43px !important;
+  padding-left: 3px;
+}
+
+#todo .main-area .todo-form .form-group .emoji .dropdown-menu .emojis .used .emoji-list .bank {
+  line-height: 43px !important;
+  padding-left: 2px;
+}
+
+#todo .main-area .todo-form .form-group .emoji .dropdown-menu .emojis .used .emoji-list .college {
+  line-height: 35px !important;
+  padding-left: 2px;
+}
+
+#todo .main-area .todo-form .form-group .emoji .dropdown-menu .emojis .used .emoji-list .bicycle {
+  line-height: 35px !important;
+  padding-left: 3px;
+}
+
+#todo .main-area .todo-form .form-group .emoji .dropdown-menu .emojis .used .emoji-list .gym {
+  line-height: 46px !important;
+  padding-left: 4px;
+}
+
+#todo .main-area .todo-form .form-group .emoji .dropdown-menu .emojis .used .emoji-list .cat {
+  line-height: 46px !important;
+  padding-left: 2px;
+}
+
+#todo .main-area .todo-form .form-group .emoji .dropdown-menu .emojis .used .emoji-list .football {
+  line-height: 43px !important;
 }
 
 #todo .main-area .todo-form .form-group .input-field {
