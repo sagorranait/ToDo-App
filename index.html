@@ -16,14 +16,26 @@
       <div class="header">
         <h1>todo</h1>
       </div>
-      <div class="todo-list"></div>
+      <div class="todo-list">
+        <div class="list-icon">
+            <span id="listIcon">🏡</span>
+        </div>
+        <div class="list-text">
+          <p id="listText">Clean the house.</p>
+        </div>
+        <div class="list-action">
+          <ul>
+            <li><a href="#" id="complate">Action</a></li>
+            <li><a href="#" id="edit">Another action</a></li>
+            <li><a href="#" id="delete">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
       <div class="todo-form">
         <form class="form-group">
           <div class="emoji">
             <div class="btn-group dropup">
-              <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                Emoji
-              </button>
+              <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Emoji</button>
               <ul class="dropdown-menu">
                 <div class="emoji-search">
                   <input type="text" name="search-emoji" id="search" class="search" placeholder="Search" />
@@ -41,7 +53,8 @@
             </div>
           </div>
           <div class="input-field">
-            <input type="text" class="form-control" id="todos" aria-describedby="emailHelp">
+            <input type="text" class="form-control" id="emoji" name="emoji" value="🏡" readonly />
+            <input type="text" class="form-control" id="todos" name="todos"/>
           </div>
         </form>
       </div>

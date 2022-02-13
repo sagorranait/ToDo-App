@@ -168,8 +168,14 @@ label:focus,
 
         .input-field{
           width: 295px;
+          @include DisplayFlex(flex, center, start, none, none);
           .form-control{
             border-radius: 50px;
+          }
+          #emoji {
+            width: 38px;
+            margin-right: 5px;
+            padding: 6px;
           }
         }
       }
