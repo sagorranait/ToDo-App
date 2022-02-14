@@ -80,6 +80,7 @@ label:focus,
   background-color: transparent;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
+  padding: 10px;
 }
 
 #todo .main-area .todo-list .list {
@@ -102,6 +103,8 @@ label:focus,
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  border-radius: 15px;
+  margin-top: 15px;
 }
 
 #todo .main-area .todo-list .list .list-icon {
@@ -113,7 +116,7 @@ label:focus,
 }
 
 #todo .main-area .todo-list .list .list-text {
-  width: 250px;
+  width: 235px;
   padding: 5px 0px 0px 9px;
 }
 
@@ -144,14 +147,21 @@ label:focus,
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  cursor: pointer;
 }
 
 #todo .main-area .todo-list .list .list-action ul li {
   list-style: none;
-  background: #eaecef;
+  background: none;
   border-radius: 50px;
   padding: 3px 7px;
   margin-right: 5px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+#todo .main-area .todo-list .list .list-action ul li:hover {
+  background: #d8d8d8;
 }
 
 #todo .main-area .todo-list .list .list-action ul li:last-child {
@@ -160,6 +170,28 @@ label:focus,
 
 #todo .main-area .todo-list .list .list-action ul li a img {
   width: 16px;
+}
+
+#todo .main-area .todo-list .list.house-list {
+  background: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+#todo .main-area .todo-list .list.house-list:hover {
+  background: linear-gradient(45deg, #d8f4c8 0%, #f2f4f6 55%);
+  cursor: pointer;
+}
+
+#todo .main-area .todo-list .list.car-list {
+  background: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+#todo .main-area .todo-list .list.car-list:hover {
+  background: linear-gradient(45deg, #ead0cc 0%, #f2f4f6 55%);
+  cursor: pointer;
 }
 
 #todo .main-area .todo-form {
@@ -359,6 +391,6 @@ label:focus,
 #todo .main-area .todo-form .form-group .input-field #emoji {
   width: 38px;
   margin-right: 5px;
-  padding: 6px;
+  padding: 5px 6px 6px 7px;
 }
 /*# sourceMappingURL=app.css.map */

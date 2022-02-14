@@ -57,11 +57,17 @@ label:focus,
       @include DivSizing(100%, 730px, transparent);
       border-bottom-right-radius: 15px;
       border-bottom-left-radius: 15px;
+      padding: 10px 10px 75px 10px;
+      overflow: auto;
+    }
 
       .list{
         padding: 15px;
         @include DivSizing(100%, auto, $White);
         @include DisplayFlex(flex, center, space-evenly, row, wrap);
+        border-radius: 15px;
+        margin-top: 15px;
+
         .list-icon{
           width: 34px;
           span{
@@ -69,7 +75,7 @@ label:focus,
           }
         }
         .list-text{
-          width: 250px;
+          width: 215px;
           padding: 5px 0px 0px 9px;
           p{
             margin: 0;
@@ -81,12 +87,18 @@ label:focus,
             margin: 0;
             padding: 0;
             @include DisplayFlex(flex, center, space-evenly, row, wrap);
+            cursor: pointer;
             li{
               list-style: none;
-              background: $Athens;
+              background: none;
               border-radius: 50px;
               padding: 3px 7px;
               margin-right: 5px;
+              transition: all .2s;
+
+              &:hover{
+                background: $Athens;
+              }
 
               &:last-child{
                 margin-right: 0px;
@@ -100,6 +112,14 @@ label:focus,
           }
         }
       }
+
+      .list.house-list{
+        @include ListHover(rgba(216,244,200,1), rgba(242,244,246,1));
+      }
+      .list.car-list{
+        @include ListHover(rgba(234,208,204,1), rgba(242,244,246,1));
+      }
+
     }
 
     .todo-form{
@@ -218,7 +238,7 @@ label:focus,
           #emoji {
             width: 38px;
             margin-right: 5px;
-            padding: 6px;
+            padding: 5px 6px 6px 7px;
           }
         }
       }

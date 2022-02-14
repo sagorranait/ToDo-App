@@ -19,3 +19,15 @@
   color: $color;
   text-transform: $transform;
 }
+
+@mixin ListHover($fristColor, $secondColor){
+  background: none;
+  transition: all .2s;
+
+  &:hover{
+    background: -moz-linear-gradient(45deg,  $fristColor 0%, $secondColor 55%);
+    background: -webkit-linear-gradient(45deg,  $fristColor 0%,$secondColor 55%);
+    background: linear-gradient(45deg,  $fristColor 0%,$secondColor 55%); 
+    cursor: pointer;
+  }
+}
