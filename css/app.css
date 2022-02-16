@@ -207,13 +207,13 @@ label:focus,
   width: 16px;
 }
 
-#todo .main-area .todo-list .list.house-list {
+#todo .main-area .todo-list .list.home-list {
   background: none;
   -webkit-transition: all .2s;
   transition: all .2s;
 }
 
-#todo .main-area .todo-list .list.house-list:hover {
+#todo .main-area .todo-list .list.home-list:hover {
   background: linear-gradient(45deg, #d8f4c8 0%, #f2f4f6 55%);
   cursor: pointer;
 }

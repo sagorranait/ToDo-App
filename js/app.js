@@ -31,7 +31,13 @@ const todo = {
     { key: 'mosquito', value: '🦟', index: 1},
     { key: 'ice-cream', value: '🍨', index: 1}
   ],
+  todoList: [
+    {id: '5454654', icon: '🏡', iconKey: 'home', todo: 'Clean the house.'},
+    {id: '4987875', icon: '🚗', iconKey: 'car', todo: 'Clean the Car.'},
+  ],
   showEmoji: document.querySelector('.emoji-list'),
+  showTodo: document.querySelector('.todo-list'),
 };
 
 showEmoji(todo.emoji, todo.showEmoji);
+showTodos(todo.todoList, todo.showTodo);
